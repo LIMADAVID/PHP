@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Drag and Drop Tree View</title>
+  <link rel="stylesheet" href="https://twitter.github.com/bootstrap/assets/css/bootstrap.css" />
+<link rel="stylesheet" href="https://fortawesome.github.com/Font-Awesome/assets/css/font-awesome.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section style="padding: 10px;">
+
+  <p>Drag the equipment nodes with the mouse. Equipment nodes can be arranged in any level of hierarchy under a facility. Facilities cannot be moved. A parent cannot be dragged under one of it's descendants.</p>
+  
+  <p>Double click to edit the label of a node.</p>
+  
+  <ul id="dragRoot">
+    <li><i class="icon-building"></i> <span class="node-facility">Facility F1</span>
+      <ul>
+        <li><i class="icon-hdd"></i> <span class="node-cpe">Example Equipment A</span>
+          <ul>
+            <li><i class="icon-hdd"></i> <span class="node-cpe">Example Equipment A1</span></li>
+            <li><i class="icon-hdd"></i> <span class="node-cpe">Example Equipment A2</span></li>
+            <li><i class="icon-hdd"></i> <span class="node-cpe">Example Equipment A3</span></li>
+          </ul>
+        </li>
+        <li><i class="icon-hdd"></i> <span class="node-cpe">Example Equipment B</span>
+          <ul>
+            <li><i class="icon-hdd"></i> <span class="node-cpe">Example Equipment B1</span></li>
+            <li><i class="icon-hdd"></i> <span class="node-cpe">Example Equipment B2</span></li>
+            <li><i class="icon-hdd"></i> <span class="node-cpe">Example Equipment B3</span></li>
+          </ul>
+        </li>
+        <li><i class="icon-hdd"></i> <span class="node-cpe">Example Equipment C</span>
+          <ul>
+            <li><i class="icon-hdd"></i> <span class="node-cpe">Example Equipment C1</span></li>
+            <li><i class="icon-hdd"></i> <span class="node-cpe">Example Equipment C2</span></li>
+            <li><i class="icon-hdd"></i> <span class="node-cpe">Example Equipment C3</span></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><i class="icon-building"></i> <span class="node-facility">Facility F2</span></li>
+    <li><i class="icon-building"></i> <span class="node-facility">Facility F3</span></li>
+  </ul>
+
+</section>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='https://twitter.github.com/bootstrap/assets/js/bootstrap.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
